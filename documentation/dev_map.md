@@ -1,0 +1,4 @@
+- add more examples
+- add testing
+- expand visualisation
+- simplify use
