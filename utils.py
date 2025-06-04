@@ -38,16 +38,8 @@ class YCurve:
         t = x/self.endpoint
         est = self.curve.evaluate_single(t)
         err = x - est[0]
-        #self.viz(est)
 
         results = recur_eval(err, t)
-
-        # use newton alg. to converge quickly
-
-        # establish answer
-
-        pass
-        #TODO: implement fast point evaluation
 
     def viz(self, est):
         self.curve.sample_size = 1000
