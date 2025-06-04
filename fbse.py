@@ -1,7 +1,5 @@
-import numpy as np
 import matplotlib.pyplot as plt
 from geomdl import BSpline
-from time import time
 
 class YCurve:
     def __init__(self, curve:BSpline.Curve()):
