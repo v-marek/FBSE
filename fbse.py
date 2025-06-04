@@ -7,12 +7,6 @@ class YCurve:
         self.curve = curve
         self.err = 0.0001
 
-        if True:
-            self.curve = BSpline.Curve()
-            self.curve.degree = 2
-            self.curve.ctrlpts = [[0.0, 0.0], [1.0, 0.5], [2.0, 1.0], [3.0, 1.0]]
-            self.curve.knotvector = [0.0, 0.0, 0.0, 1.0, 3.0, 3.0, 3.0]
-
         self.endpoint = None        # the endpoint of the curve
         self.startpoint = None      # the startpoint of the curve
         self.x = None               # TARGET                        (also just x)
@@ -38,6 +32,7 @@ class YCurve:
         err = x - est[0]
 
         results = recur_eval(err, t)
+        return results
 
     def viz(self, est):
         self.curve.sample_size = 1000
