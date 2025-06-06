@@ -1,6 +1,16 @@
 import matplotlib.pyplot as plt
 from geomdl import BSpline
 
+class BCurve:
+    def __init__(self, curve)
+        # load the bezier curve
+        self.curve = curve
+
+    def evaluate_point(self, x):
+        # evaluate a bezier cirve at given x-coordinate
+        pass
+        #TODO: COMPLETE BEZIER IMPLEMENTATION
+
 class YCurve:
     def __init__(self, curve:BSpline.Curve()):
         # load the bspline
